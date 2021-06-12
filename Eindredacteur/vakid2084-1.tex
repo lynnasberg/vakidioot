@@ -1,0 +1,26 @@
+\documentclass[print]{vakidioot} % haal [print] weg voor de online versie
+
+\magazinetheme{Titel}
+\magazineissue{november 2084}
+\uitgave{25 november 2084} % reken hier ~2 weken na versturen naar de drukker
+\oplage{300000000}
+\deadline{7 februari 2085} % voor de volgende editie
+
+\begin{document}
+	
+	\frontpage{cover}{4}{4}
+	
+	\tableofcontents
+	
+	% laad hier de artikelen in (latex bestanden)
+	% (.tex, .png, .pdf etc kun je weglaten)
+	\include{redactioneel/redactioneel}
+	\include{vandevoorzitter/vandevoorzitter}
+	\include{artikelfolder/artikelbestand}
+	\fullpageadvertisement{advertentie}
+	\include{medezeggenschap/medezeggenschap}
+	\fullpageadvertisement{advertentie}{18}{18} % standaard is de marge 4x4 mm, je kunt het evt aanpassen zelf (hier 18x18mm)
+	
+	\fotostrip[De strip]{strip}{4}{4}
+	
+\end{document}
