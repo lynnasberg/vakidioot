@@ -16,10 +16,14 @@
 * Het zou zomaar kunnen dat in de toekomst de indeling van het .tex bestand
 * verandert, waardoor deze code niet meer (goed) werkt. Voel je vrij om het
 * dan aan te passen. Als je hier hulp nodig bij hebt, schroom dan niet om
-* contact met mij op te nemen via niels.asberg@gmail.com!
+* contact met mij op te nemen via lynnasberg@gmail.com!
+*
+* Het compileren van deze code naar een uitvoerbaar bestand kun je het
+* makkelijkst doen d.m.v. g++, zie ook https://www.geeksforgeeks.org/compiling-with-g-plus-plus/
 *
 * Geschiedenis:
-* - 2020-04-06 Aangemaakt door Niels Asberg
+* - 2020-04-06 Aangemaakt door Lynn Asberg
+* - 2021-07-13 Fixes + uitleg over G++ toegevoegd
 *
 */
 
@@ -99,31 +103,32 @@ void replaceLatexCommands(std::string& str)
 	// vervang een latex commando door het teken dat het representeert.
 	// voeg hier vooral wat aan toe als je iets nieuws tegenkomt!
 	// let op: een backslach schrijf je als \\ en " als \"
-	replace(str, "\\\"{a}", "ä");
-	replace(str, "\\\"{e}", "ë");
-	replace(str, "\\\"{i}", "ï");
-	replace(str, "\\\"{u}", "ü");
-	replace(str, "\\\"{o}", "ö");
-	replace(str, "\\\"{y}", "ÿ");
+	replace(str, "\\\"{a}", "Ã¤");
+	replace(str, "\\\"{e}", "Ã«");
+	replace(str, "\\\"{i}", "Ã¯");
+	replace(str, "\\\"{u}", "Ã¼");
+	replace(str, "\\\"{o}", "Ã¶");
+	replace(str, "\\\"{y}", "Ã¿");
 
-	replace(str, "\\\'{a}", "á");
-	replace(str, "\\\'{e}", "é");
-	replace(str, "\\\'{i}", "í");
-	replace(str, "\\\'{u}", "ú");
-	replace(str, "\\\'{o}", "ó");
-	replace(str, "\\\'{y}", "ý");
+	replace(str, "\\\'{a}", "Ã¡");
+	replace(str, "\\\'{e}", "Ã©");
+	replace(str, "\\\'{i}", "Ã­");
+	replace(str, "\\\'{u}", "Ãº");
+	replace(str, "\\\'{o}", "Ã³");
+	replace(str, "\\\'{y}", "Ã½");
 
-	replace(str, "\\\`{a}", "à");
-	replace(str, "\\\`{e}", "è");
-	replace(str, "\\\`{i}", "ì");
-	replace(str, "\\\`{u}", "ù");
-	replace(str, "\\\`{o}", "ò");
+	replace(str, "\\`{a}", "Ã ");
+	replace(str, "\\`{e}", "Ã¨");
+	replace(str, "\\`{i}", "Ã¬");
+	replace(str, "\\`{u}", "Ã¹");
+	replace(str, "\\`{o}", "Ã²");
 
-	replace(str, "\\c{c}", "ç");
-	replace(str, "\\c{C}", "Ç");
+	replace(str, "\\c{c}", "Ã§");
+	replace(str, "\\c{C}", "Ã‡");
 	replace(str, "\\&", "&");
-	replace(str, "\\{AA}", "Å");
-	replace(str, "\\{aa}", "å");
+	replace(str, "\\{AA}", "Ã…");
+	replace(str, "\\{aa}", "Ã¥");
+	replace(str, "\\~{n}", "Ã±");
 }
 
 int main()
