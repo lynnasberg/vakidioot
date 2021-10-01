@@ -1,8 +1,8 @@
 # vakidioot
 Alles wat je nodig hebt om een Vakidioot te maken
 
-1. 1. Voor Windows-gebruikers: installeer *MiKTeX* van miktex.org/download
-   2. Voor Mac-gebruikers: installeer *MacTex 2016* (of hoger) van tug.org/mactex
+1. 1. Voor Windows-gebruikers: installeer *MiKTeX* van https://miktex.org/download
+   2. Voor Mac-gebruikers: installeer *MacTex 2016* (of hoger) van https://tug.org/mactex/
    3. Voor Linux-gebruikers: installeer *TeX Live* (texlive-base of texlive-full)
 2. Pak *vakidioot-starterpack-2020.zip* uit.
 3. Ga naar de map */Fonts* en installeer alle fonts in deze map. Op Windows doe je dit door ctrl+a te doen, dan rechts te klikken en op "Install" te drukken.
