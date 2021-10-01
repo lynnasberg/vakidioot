@@ -10,4 +10,4 @@ Alles wat je nodig hebt om een Vakidioot te maken
 5. Open nu je tex-editor naar keuze (ik raad TeXstudio aan https://www.texstudio.org/). Zorg dat de compiler op 'XeLaTeX' staat (in TeXstudio via Options -> Configure TeXstudio -> Build, verander 'Default Compiler').
 6. Zet de bestanden in */Vakidioot-stijl* allemaal in de map (elke map!) waarin je gaat werken aan .tex bestanden voor de Vakidioot.
 
-Nu zou het hopelijk moeten werken! Als je nu een .tex bestand voor een vakidioot artikel compileert, gaat je computer eerst allemaal packages installeren. Daarna is ie klaar voor gebruik! Lukt het niet? Stuur dan Niels Asberg een berichtje.  Ik durf geen garantie te geven voor Mac en Linux! Als je aanvullingen of verbeteringen hebt, stuur ze dan ook vooral door!
+Nu zou het hopelijk moeten werken! Als je nu een .tex bestand voor een vakidioot artikel compileert, gaat je computer eerst allemaal packages installeren. Daarna is ie klaar voor gebruik! Lukt het niet? Stuur dan Lynn Asberg een berichtje.  Ik durf geen garantie te geven voor Mac en Linux! Als je aanvullingen of verbeteringen hebt, stuur ze dan ook vooral door!
