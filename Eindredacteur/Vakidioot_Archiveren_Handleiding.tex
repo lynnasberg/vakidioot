@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
+\title{Handleiding Vakidioot archiveren en verzenden}
+\author{Lynn Asberg en Jim Vollebregt}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    Lukt er iets niet of heb je vragen? Stuur dan een mailtje naar Lynn Asberg op \href{mailto:lynnasberg@gmail.com}{lynnasberg@gmail.com}.
+\end{center}
+
+
+\section{Archiveren}
+
+Upload vakidioot en cover:
+
+\begin{enumerate}
+    \item Ga naar A-Eskwadraat.nl
+    \item Ga naar Vereniging $\to$ Vakidioot $\to$ Archief $\to$ jaar (bijv. 2019-2020)
+    \item Klik op het potlood (publisher)
+    \item Ga naar `Naar bestanden beheren'
+    \item Upload gecomprimeerde Vakidioot (https://pdfcompressor.com/ of ilovepdf.com) en voorkant (als voorkant$n$.jpg)
+\end{enumerate}
+
+\noindent Voeg nieuwe Vakidioot toe aan het archief:
+\begin{enumerate}
+    \item Ga naar Vereniging $\to$ Vakidioot $\to$ Archief $\to$ jaar (bijv. 2019-2020)
+    \item Klik op het potlood (publisher)
+    \item Klik op `broncode'
+    \item Scroll helemaal naar beneden en pas in de goede regel de pdf, titel (\texttt{alt="..."}) en de cover (\texttt{src="..."}) aan zodat ze kloppen.
+\end{enumerate}
+
+\noindent Voeg de nieuwe Vakidioot toe aan de homepage:
+\begin{enumerate}
+    \item Ga naar Vereniging $\to$ Vakidioot
+    \item Klik op het potlood (publisher)
+    \item Klik op `broncode'
+    \item Scroll naar beneden tot je \texttt{<h2>De Vakidioot</h2>} ziet staan
+    \item Pas in de regel daaronder de titel, pdf en cover aan naar de nieuwste editie
+\end{enumerate}
+
+\section{Pagina voor nieuw jaar toevoegen}
+\begin{enumerate}
+    \item Ga naar A-Eskwadraat.nl
+    \item Ga naar Vereniging $\to$ Vakidioot $\to$ Archief $\to$ jaar (bijv. 2019-2020)
+    \item Klik op het potlood (publisher)
+    \item Klik op `broncode'
+    \item Kopieer de gehele broncode
+    \item Ga naar Vereniging $\to$ Vakidioot
+    \item Klik op het potlood (publisher)
+    \item Klik op `naar bestanden beheren'
+    \item Scroll naar beneden naar `Nieuwe map aanmaken' en maak de nieuwe map aan (bijvoorbeeld ``2122'' voor 2021-2022).
+    \item Scroll naar boven en klik op het mapicoontje van de map die je net hebt aangemaakt
+    \item Maak bij `Nieuw bestand aanmaken' index.html aan
+    \item Klik op het potloodje bij index.html
+    \item Klik op `broncode'
+    \item Vervang de broncode door de zojuist gekopieerde broncode
+    \item Verander de jaartallen in de code door de nieuwe jaartallen
+    \item Ga naar Vereniging $\to$ Vakidioot $\to$ Archief $\to$ jaar (bijv. 2019-2020, ga naar het vorige jaar)
+    \item Klik op het potlood (publisher)
+    \item Klik op `broncode'
+    \item Zorg dat het nieuwe jaar aanklikbaar is, bijvoorbeeld: \texttt{<a href="../2021/index.html">2020-2021 \&raquo;</a></li>}
+\end{enumerate}
+
+\section{Vakidioot mailen}
+\begin{enumerate}
+    \item Maak een tinyurl aan via Service $\to$ TinyUrl
+    \item Klik op `nieuw'
+    \item Zet bij `TinyUrl' ``vakid1819-4-titel'', met de juiste jaartallen en nummer
+    \item Zet bij `OutgoingUrl' de link naar de geuploadde PDF van de Vakidioot
+    \item Stel de email die je naar de Vakidioot-ontvangers wil versturen op in je eigen mailprogramma en mail deze naar \emph{mailings@a-eskwadraat.nl}. Zet als titel ``Vakidioot 1819-4 Titel'' met de juiste jaartallen etc.
+    \item Ga naar Service $\to$ Mailings en zoek je mail, klik op de titel.
+    \item Klik op het potloodje en pas alles aan naar wens.
+    \item Zorg dat je `IsDefinitief' hebt aangevinkt, anders wordt de email niet verzonden
+    \item Klik op `Wijzig'
+    \item Stuur voor de zekerheid een preview van de mail naar jezelf door op `Preview versturen' te klikken, zo kun je checken of alles klopt.
+\end{enumerate}
+
+\section{Drukken}
+\begin{enumerate}
+    \item Mail de secretaris van A-Es en vraag om de adressenlijst voor de Vakidioot en het aantal donateurs.
+    \item De secretaris stuurt je een .tex bestand. Maak hier een Excel bestand van met \texttt{VakidiootAdressenExport.exe} (of via \texttt{VakidiootAdressenExport.cpp} als je niet op Windows zit, dan zul je hem wel zelf moeten compileren).
+    \item Kijk hoeveel adressen er zijn, tel hier het aantal donateurs bij op en dit is je oplage.
+    \item Ga naar WeTransfer, vul bij ontvanger ``iwan@bladnl.nl''
+    \item Type een bericht in de beschrijving, noem hierin de oplage
+    \item Druk op `Verstuur'!
+\end{enumerate}
+
+\end{document}
